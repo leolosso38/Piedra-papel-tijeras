@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijera</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+   
+    
+</head>
+<body>
+    <audio id="background-sound" src="https://res.cloudinary.com/dxngs372e/video/upload/v1725936749/epic-game-music-by-kris-klavenes-3-mins-49771_oxgu2r.mp3" autoplay loop></audio>
+    <!--Audio-->
+    <audio id="win-sound" src="https://res.cloudinary.com/dxngs372e/video/upload/v1725936828/winning-218995_tbwrsu.mp3" preload="auto"></audio>
+    <audio id="lose-sound" src="https://res.cloudinary.com/dxngs372e/video/upload/v1725936813/game-over-39-199830_c7ri8x.mp3" preload="auto"></audio>
+    <audio id="click-sound" src="https://res.cloudinary.com/dxngs372e/video/upload/v1725936820/short-beep-tone-47916_xj2pru.mp3" preload="auto"></audio>
+
+
+
+    <!-- Puntuaciones -->
+    <div class="message">
+        <p class="player1">Ganadas: <span id="win">0</span></p>
+        <p class="player1">Perdidas: <span id="lose">0</span></p>
+    </div>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <h1 class="title">Piedra, Papel o Tijera</h1>
+        <img src="https://i.postimg.cc/sDTbgpHt/png-transparent-rock-paper-scissors-hand-game-drawing-scissors-game-hand-technic.png" class="responsive-image" alt="Gif Animado">
+        
+        <h2 class="subtitle">Elige una opción</h2>
+        <div class="choices">
+           
+            <button class="choice" id="rock" data-aos="fade-up-right" data-aos-delay="20">
+                <img src="https://i.postimg.cc/SRr388SY/piedra.png" width="100" alt="Piedra">
+            </button>
+            <button class="choice" id="paper" data-aos="fade-up" data-aos-delay="20">
+                <img src="https://i.postimg.cc/fLY6zp1K/papel.png" width="100" alt="Papel">
+            </button>
+            <button class="choice" id="scissors" data-aos="fade-up-left" data-aos-delay="20">
+                <img src="https://i.postimg.cc/FFg22tyF/tijera.png" width="100" alt="Tijera">
+            </button>
+        </div>
+    </div>
+
+    <!-- Resultados -->
+    <div class="result" id="resultText">
+
+
+
+
+    </div>
+
+    <!-- Contenedor de las elecciones -->
+<div class="selection-container">
+   
+    <!-- Elección del jugador -->
+    <div class="player-section">
+        <h3 class="player">Player</h3>
+        <img id="player-choice" src="https://i.postimg.cc/xTfWQs5v/piedra-papel-tijera.gif" alt="Tu elección" >
+    </div>
+
+    <!-- Elección de la computadora -->
+    <div class="pc-section">
+        <h3 class="pc">PC</h3>
+        <img id="pc-choice" src="https://i.postimg.cc/xTfWQs5v/piedra-papel-tijera.gif" alt="Elección de la PC" >
+    </div>
+</div>
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(); // Inicializa la librería AOS
+    </script>
+</body>
+
+</html>
+
