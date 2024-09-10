@@ -155,3 +155,75 @@ body {
     border-radius: 100%;
 }
 
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .container {
+        padding: 60px;
+        max-width:200px;
+    }
+
+    .result {
+        font-size: 60px;
+    }
+
+    .message {
+        font-size: 20px;
+    }
+
+    .player-section , .pc-section  {
+        
+        width:20%;
+        max-width: 100px;
+        
+    }
+    .player-section img, .pc-section img {
+        
+        width:60%;
+        max-width: 100px;
+        
+    }
+    .player-section {
+        transform: translateX(50%);
+        top: 100px;
+        left: 87%;
+    }
+
+    .pc-section {
+        transform: translateX(50%);
+        top: 100px;
+        left: 67%;
+      
+    }
+
+    .jugada {
+        gap: 5em;
+    }
+}
+@media (max-width: 1325) {
+    .result {
+        font-size: 40px;
+    }
+
+    .message {
+        font-size: 18px;
+    }
+
+    .player-section, .pc-section {
+        padding: 5px;
+        font-size: 20px;
+    }
+}
+@media (max-width: 480px) {
+    .result {
+        font-size: 40px;
+    }
+
+    .message {
+        font-size: 18px;
+    }
+
+    .player-section, .pc-section {
+        padding: 5px;
+        font-size: 20px;
+    }
+}
